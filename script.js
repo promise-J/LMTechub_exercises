@@ -2,6 +2,7 @@ const closeBtn = document.querySelector('.menu-close')
 const openBtn = document.querySelector('.menu-open')
 const sidebar = document.querySelector('.sidebar')
 const sidebarUl = document.querySelector('.sidebar ul')
+const bodyEl = document.querySelector('body')
 
 
 
@@ -23,4 +24,10 @@ closeBtn.addEventListener('click', ()=>{
     sidebar.style.width = '55px'
     closeBtn.style.display = 'none'
     openBtn.style.display = 'block'
+})
+
+bodyEl.addEventListener('click', (event)=>{
+    if(event.target.class!=='sidebar'){
+        console.log(event)
+    }
 })

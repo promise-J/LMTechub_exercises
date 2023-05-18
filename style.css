@@ -15,6 +15,9 @@
 
 body {
   width: 100%;
+  /* height: fit-content; */
+  overflow-y: auto;
+  /* background: black; */
 }
 
 .sidebar {
@@ -23,7 +26,7 @@ body {
   background-color: transparent;
   /* box-shadow: 2px 2px 2px 2px rgb(235, 234, 234); */
   position: fixed;
-  top: 80px;
+  top: 0px;
   left: 0;
   display: flex;
   /* justify-content: center; */
@@ -35,6 +38,7 @@ body {
 .sidebar .menu-close {
   display: none;
 }
+
 
 .sidebar ul {
   /* background-color: green; */
@@ -97,8 +101,11 @@ header h3 span:nth-child(2) {
   border-radius: 12px;
   margin: auto;
   margin-top: 60px;
-  padding: 40px 20px;
+  padding: 70px 20px;
   margin-bottom: 40px;
+  /* background: red; */
+  min-height: 200vh;
+  /* height: fit-content; */
 }
 
 .container .instruction ul {
@@ -124,6 +131,7 @@ header h3 span:nth-child(2) {
 }
 .container .exercise-img img {
   width: 100%;
+  border: 2px solid black;
 }
 
 .container .tasks{
@@ -132,13 +140,17 @@ header h3 span:nth-child(2) {
 }
 
 
-.container .tasks ol{
-    /* background: blue; */
-    margin-left: 30px;
-    margin-top: 20px;
-    line-height: 2.3;
+.container .tasks .task-list{
+  /* background: blue; */
+  margin-left: 30px;
+  margin-top: 20px;
+  /* line-height: 2.3; */
 }
-
+.container .tasks .task-list{
+  /* background: yellow; */
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
 
 
 
