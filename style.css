@@ -121,6 +121,10 @@ header h3 span:nth-child(2) {
   color: green;
   line-height: 1.9;
 }
+.container .instruction ul li span{
+  text-decoration: underline;
+  color: red;
+}
 
 .container .exercise-img {
   /* background-color: red; */
