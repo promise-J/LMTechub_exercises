@@ -152,6 +152,25 @@ header h3 span:nth-child(2) {
   margin-bottom: 30px;
 }
 
+.images{
+  /* background: red; */
+  height: 90vh;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
+}
+
+.images .image{
+  /* background: green; */
+  height: 280px;
+}
+
+.images .image img{
+  height: 100%;
+  width: 100%;
+}
 
 
 @media screen and (width <= 400px) {
@@ -163,5 +182,18 @@ header h3 span:nth-child(2) {
     margin-top: 10px;
     width: 100%;
     padding: 5px;
+  }
+}
+
+@media screen and (width <= 850px) {
+  .images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width <= 580px) {
+  .images{
+    grid-template-columns: 1fr;
+    margin-top: 200px;
   }
 }
