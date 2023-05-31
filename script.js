@@ -3,6 +3,7 @@ const openBtn = document.querySelector('.menu-open')
 const sidebar = document.querySelector('.sidebar')
 const sidebarUl = document.querySelector('.sidebar ul')
 const bodyEl = document.querySelector('body')
+const containerEl = document.querySelector('.container')
 
 
 
@@ -26,8 +27,11 @@ closeBtn.addEventListener('click', ()=>{
     openBtn.style.display = 'block'
 })
 
-bodyEl.addEventListener('click', (event)=>{
-    if(event.target.class!=='sidebar'){
-        console.log(event)
+
+containerEl.addEventListener('click', (e)=>{
+    if(e.srcElement.matches('div')){
+        console.log('clicked the sidebar')
+    }else{
+        console.log('clicked outside the sidebar')
     }
 })

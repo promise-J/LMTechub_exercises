@@ -104,7 +104,7 @@ header h3 span:nth-child(2) {
   padding: 70px 20px;
   margin-bottom: 40px;
   /* background: red; */
-  min-height: 200vh;
+  min-height: 550vh;
   /* height: fit-content; */
 }
 
@@ -126,12 +126,75 @@ header h3 span:nth-child(2) {
   color: red;
 }
 
+
+/* remove below me */
+.work{
+  border: 1px solid rgb(68, 65, 65);
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.work article{
+  /* border: 1px solid red; */
+  position: relative;
+}
+.work article:nth-child(1){
+  /* grid-row: 1/4; */
+  /* grid-column: 1/3; */
+}
+.work article:nth-child(2){
+  /* grid-column: 2/4; */
+}
+.work article:nth-child(3){
+  /* grid-column: 2/4; */
+}
+.work article:nth-child(4){
+  /* grid-row: 1/3; */
+  /* grid-column: 5/6; */
+}
+.work article:nth-child(5){
+  /* grid-row: 3/5; */
+}
+.work article:nth-child(6){
+  /* grid-row: span 3; */
+}
+.work article:nth-child(7){}
+.work article:nth-child(8){
+  /* grid-row: 3/5; */
+  /* grid-column: 4/6; */
+}
+
+.work article span{
+  background-color: red;
+  position: absolute;
+  padding: 10px 15px;
+}
+
+.work article img{
+  /* height: 100%; */
+  width: 100%;
+  height: 75px;
+  object-fit: cover;
+}
+
+
+
+/* remove above  me*/
 .container .exercise-img {
   /* background-color: red; */
   /* height: 200px; */
   margin-top: 50px;
   width: 100%;
   padding: 10px;
+}
+.container .exercise-img p{
+  margin: 10px auto;
+  color: blue;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 .container .exercise-img img {
   width: 100%;
@@ -141,6 +204,18 @@ header h3 span:nth-child(2) {
 .container .tasks{
     /* background-color: red; */
     height: 200px;
+}
+
+.container .title{
+  /* color: green; */
+  font-size: 34px;
+}
+
+.container .title + p{
+  /* color: red; */
+  opacity: .7;
+  font-size: 20px;
+  margin-top: 12px; 
 }
 
 
